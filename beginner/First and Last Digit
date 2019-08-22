@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int f = n%10;
+        if(n<10)
+        return f;
+        int l = 0;
+        while(n!=0){
+            l = n%10;
+            n = n/10;
+        }
+        cout<<(f+l)<<endl;
+    }
+	return 0;
+}
