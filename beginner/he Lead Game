@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    int max = 0;;
+    int minPerson;
+    int curr,person;
+    cin>>t;
+    int i=0,j=0;
+    while(t--){
+        int k,l;
+        cin>>k>>l;
+        i+=k;
+        j+=l;
+        if(i>=j){
+            curr = i-j;
+            person = 1;
+        } else {
+            curr = j-i;
+            person = 2;
+        }
+        if(curr>max){
+            max = curr;
+            minPerson = person;
+        }
+    }
+    cout<<minPerson<<" "<<max<<endl;
+	return 0;
+}
