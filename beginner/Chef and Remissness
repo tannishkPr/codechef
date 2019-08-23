@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    long long int a,b;
+	    cin>>a>>b;
+	    cout<<std::max(a, b)<<" "<<(a+b)<<endl;
+	}
+	return 0;
+}
