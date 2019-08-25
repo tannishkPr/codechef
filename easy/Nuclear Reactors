@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	    int n,k;
+	    long long int a;
+	    cin>>a>>n>>k;
+	    long long int arr[100000];
+	    for(int i = 0;i<k;i++){
+	        arr[i] = a % (n+1);
+	        a = a / (n+1); 
+	        cout<<arr[i] << " ";
+	    }
+	return 0;
+}
